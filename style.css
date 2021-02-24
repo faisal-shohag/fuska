@@ -1,3 +1,7 @@
+body{
+  font-family: Hind Siliguri;
+}
+
 .O{
   font-size: 400px;
   position: fixed;
@@ -35,7 +39,6 @@
     font-family: Hind Siliguri;
     font-size: 23px;
     text-align: center;
-    z-index: 999;
     position: fixed;
     bottom: 20%;
     width: 100%;
@@ -47,7 +50,6 @@
     font-family: Hind Siliguri;
     font-size: 20px;
     text-align: center;
-    z-index: 999;
     position: fixed;
     bottom: 10%;
     width: 100%;
@@ -62,3 +64,4 @@
 .order:hover{
 background: #7e7e7e;
 }
+
