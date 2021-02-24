@@ -22,13 +22,36 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="cart">
+    <a class="modal-trigger" href="#modal2">  
+        <div class="cart">
         <div class="cart-count">0</div>
         <div>
             <i class="icofont-cart"></i>
         </div>
     </div>
-    <div class="animate__animated animate__fadeIn text" ><span style="color: red"><i style="font-size: 33px;" class="icofont-lunch"></i> ঐশী</span> ফুসকা হাউস</div>
+    </a>
+
+    <a class="modal-trigger" href="#modal3">  
+        <div class="pending">
+        <div class="pending-count">0</div>
+        <div>
+            <i class="icofont-delivery-time"></i>
+        </div>
+    </div>
+    </a>
+    
+
+    <div class="notifications">
+        <div>
+        <div class="top"><i class="icofont-megaphone-alt"></i> অর্ডার আপডেট</div>
+        <div class="body">
+            <div class="order-name"><i class="icofont-spoon-and-fork"></i> ফুস্কা <span class="item-count">3</span>টি</div>
+            <div class="order-status"><i class="icofont-delivery-time"></i> Status: পেন্ডিং...</div>
+        </div>
+    </div>
+    </div>
+
+    <div class="animate__animated animate__fadeIn text" ><span style="color: red"><i style="font-size: 33px;" class="icofont-lunch"></i></span> ফুসকা হাউস</div>
     <div class="animate__animated animate__fadeInLeftBig  logo">
         <div class="img"><img  src="https://static-01.daraz.com.bd/p/mdc/7bc59a042aa4a685d494564fa586713c.png_340x340q80.jpg_.webp"></div>
     </div>
@@ -41,12 +64,14 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
 
     <div class="animate__animated animate__jello price">
         <i class="icofont-money"></i> প্রতি প্লেট মাত্র ৬০ টাকা!<br>
-   <small style="color: blueviolet;"><i class="icofont-ui-love  red-text"></i> ডেলিভারি চার্জ ফ্রি</small>
+   <small style="color: blueviolet;"><i class="icofont-vehicle-delivery-van"></i></i> ডেলিভারি চার্জ ফ্রি!!</small>
     </div>
 
 
 
+
     <!-- Modal Structure -->
+    <div class="order-modal1">
     <div id="modal1" class="modal bottom-sheet">
       <div class="modal-content">
         <h5 class="green-text"><i class="icofont-cart"></i> অর্ডার নিশ্চিত করণ!</h5><div style="color: #7e7e7e; font-size: 10px;">
@@ -72,8 +97,38 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         <a href="#!" class="modal-close waves-effect white-text red waves-green btn-flat"><i class="icofont-close left"></i> বাতিল</a>
       </div>
     </div>
-
+</div>
     <a style="width: 100%;" class="modal-trigger" href="#modal1">  <div class="animate__animated animate__swing order"><i class="icofont-cart"></i> অর্ডার করুন!</div></a>
+
+
+
+        <!-- Modal Structure -->
+ <div class="order-modal2">
+            <div id="modal2" class="modal bottom-sheet">
+              <div class="modal-content">
+                <h5 class="green-text"><i class="icofont-cart"></i> আপনার অর্ডার সমূহ</h5><div style="color: #7e7e7e; font-size: 10px;">
+                <i style="font-size: 15px;" class="material-icons left">thumbs_up_down</i> <span>ক্যাশ অন ডেলিভারি!</span>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect white-text orange waves-green btn"> <i class="icofont-flag-alt-1 left"></i> রিপোর্ট</a>
+                <a href="#!" class="modal-close waves-effect white-text red waves-green btn-flat"><i class="icofont-close left"></i> ওকে!</a>
+              </div>
+            </div>
+        </div>
+
+        <div class="order-modal3">
+            <div id="modal3" class="modal bottom-sheet">
+              <div class="modal-content">
+                <h5 class="green-text"><i class="icofont-delivery-time"></i>অর্ডার পেন্ডিং</h5><div style="color: #7e7e7e; font-size: 10px;">
+                <i style="font-size: 15px;" class="icofont-fast-delivery left"></i> <span>ফাস্ট ডেলিভারি!</span>
+              </div>
+              <div class="modal-footer">
+                <!-- <a href="#!" class="modal-close waves-effect white-text orange waves-green btn"> <i class="icofont-flag-alt-1 left"></i> রিপোর্ট</a> -->
+                <a href="#!" class="modal-close waves-effect white-text red waves-green btn-flat"><i class="icofont-close left"></i> ওকে!</a>
+              </div>
+            </div>
+        </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.17.2/dist/sweetalert2.all.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
