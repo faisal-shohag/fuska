@@ -1,9 +1,11 @@
-
   $(document).ready(function(){
     $('.modal').modal();
   });
+  $(document).ready(function(){
+    $('select').formSelect();
+  });
 
-
+/*
 
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition);
@@ -14,7 +16,7 @@
   }
   
   function showPosition(position) {
-    console.log(position);
+    //console.log(position);
     var lat = position.coords.latitude;
     var lon = position.coords.longitude;
     // console.log(lat);
@@ -46,7 +48,6 @@
       console.log(division[0]);
       getdiv(division[0]);
     });
-
   }
 
 
@@ -54,3 +55,4 @@
   function getdiv(div) {
     console.log(div)
 }
+*/

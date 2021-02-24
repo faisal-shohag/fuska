@@ -65,3 +65,31 @@ body{
 background: #7e7e7e;
 }
 
+
+.cart{
+  font-size: 30px;
+  position: fixed;
+  right: 5%;
+  top: 2%;
+}
+
+.cart .cart-count{
+  font-size: 10px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: red;
+  color: white;
+  height: 16px;
+  width: 16px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.bottom-sheet{
+  max-height: 60% !important;
+}
